@@ -1,22 +1,12 @@
-# String methods (see Table 4-2)
+# Python includes a set of string operations called methods that 
+# make tasks like coutning the words in a single sentence easy.
 
-s = "Hi there!"
+sentence = input("Enter a sentence: ")
+listOfWords = sentence.split()  # breaks sentence into list of words
+print(listOfWords)              # every time it sees a space it counts it as the next word
+print("There are", len(listOfWords), "words.")
 
-print(s.center(11))
-print(s.count("e"))
-print(s.endswith("there!"))
-print(s.startswith("Hi"))
-print(s.find("the"))    # Returns the position before "the" starts
-print(s.isalpha())      # Doesn't accept arguments. True if string is alphabetic, false if not.
-#This one returns false because there is a space character and a ! character
-
-print(s.isdigit())
-print(s.lower())        # Returns the string in lower case, doesn't change the string itself
-print(s)
-s = s.lower()           # Changes the string to lower case
-print(s)
-print(s.upper())
-print(s.replace("i", "ey"))
-
-print(s.split())        # split takes a string and makes it a list. splits by whatever like a space or new line,
-print(s.split("e"))     # unless you specify a character
+sum = 0
+for word in listOfWords:
+    sum += len(word)
+print("The average word length is", sum / len(listOfWords))
