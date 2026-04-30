@@ -10,3 +10,4 @@ sum = 0
 for word in listOfWords:
     sum += len(word)
 print("The average word length is", sum / len(listOfWords))
+

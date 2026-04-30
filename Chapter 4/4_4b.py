@@ -20,3 +20,5 @@ print(s.replace("i", "ey"))
 
 print(s.split())        # split takes a string and makes it a list. splits by whatever like a space or new line,
 print(s.split("e"))     # unless you specify a character
+
+# s = s.lower() would convert the string to all lowercase, then assign it to itself

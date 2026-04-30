@@ -15,3 +15,4 @@ df.sample(n = actNumber)
 # Open/initialize output file in write mode. This will be used
 # to write the agenda using the randomized activity list.
 outputFile = open("agenda.txt", "w")
+

@@ -13,3 +13,4 @@ print(name[-2])             # Shorthand for next to last character
 # accessed but they cannot be replaced, inserted, or removed
 
 # name[0] = "a"   # Oops! A type error!
+# trying to change the string here - cannot because strings are immutable
