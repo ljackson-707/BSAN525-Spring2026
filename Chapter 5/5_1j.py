@@ -16,3 +16,7 @@ print(aList)
 # This string method works for strings, but NOT on lists!
 # You're assigning aList to nothing and get None back
 
+greeting = "hello"
+s = greeting.upper()
+print(s)
+# Works for the list and returns HELLO because strings are immutable
