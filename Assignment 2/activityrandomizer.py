@@ -38,6 +38,7 @@ if approve == "Y":
         line = str(lineNumber) + ". " + activity + "\n"     # similar to exercise 4.9
         outputFile.write(line)
     outputFile.close()
+    print("The agenda has been created in the output file agenda.txt.")
 elif approve == "N":
     print("The program is closed. No file will be generated.")
 else:
