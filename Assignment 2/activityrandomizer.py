@@ -30,8 +30,7 @@ print(list(randomdf["Name"]))
 # to write the agenda using the randomized activity list.
 outputFile = open("agenda.txt", "w")
 
-# **To write to an outputfile, outputFile.write(text)
-
+# ** To write to an outputfile, outputFile.write(text)
 
 # Close both files at the end of the program, frees up memory
 fileName.close()
