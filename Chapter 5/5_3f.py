@@ -11,3 +11,6 @@ theKeys. sort() # This sorts the list of keys in alphabetical order
 
 for key in theKeys:
     print(key, info[key])
+# Returns:
+# name Sandy
+# occupation manager

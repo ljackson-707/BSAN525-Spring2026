@@ -7,7 +7,7 @@ f = open(fileName, "r")
 
 # Input the text, convert its words to uppercase, and add the words to a list
 words = []  # defines empty list for words to go into.
-for line in f:
+for line in f: 
     for word in line.split():
         words.append(word.upper())  # converts words to uppercase and appends to words list
 

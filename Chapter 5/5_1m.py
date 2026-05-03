@@ -8,7 +8,7 @@ in the set and greater than the other half.
 fileName = input("Enter the filename: ")
 f = open(fileName, "r")
 
-# Input the text, convert it to numbers, and add the numebrs to a list
+# Input the text, convert it to numbers, and add the numbers to a list
 numbers = []
 for line in f:
     words = line.split()

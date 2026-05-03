@@ -5,12 +5,16 @@
 info = {"name":"Sandy", "occupation":"manager"}
 
 for key in info:
-    print(key, info[key])   
+    print(key, info[key])  
+# Returns:
+# name Sandy
+# occupation manager
 
 # Alternative: Use the dictionary method items()
 # Returns the dictionary as a list of key/value couples
 print(list(info.items()))   
 # Returns list of tuples that contain key and value
+# Returns [('name', 'Sandy'), ('occupation', 'manager')]
 
 # Access the key and value of each entry in the list within a for loop:
 for (key, value) in info.items():

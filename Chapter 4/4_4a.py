@@ -1,5 +1,5 @@
 # Python includes a set of string operations called methods that 
-# make tasks like coutning the words in a single sentence easy.
+# make tasks like counting the words in a single sentence easy.
 
 sentence = input("Enter a sentence: ")
 listOfWords = sentence.split()  # breaks sentence into list of words

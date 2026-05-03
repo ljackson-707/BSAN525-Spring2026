@@ -14,8 +14,10 @@ first = [1, 2, 3, 4]
 second = list(range(1,5))   # have to set it as a list to make it return a list
 print(first)
 print(second)
+# Returns [1, 2, 3, 4]
 
 # The list function can built from any iterable
 # sequence of elements.
 third = list("Hi there!")
 print(third)
+# Returns ['H', 'i', ' ', 't', 'h', 'e', 'r', 'e', '!']

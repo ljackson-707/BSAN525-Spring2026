@@ -15,3 +15,6 @@ print(food)
 veggies = ["celery", "beans"]
 print(tuple(veggies))
 # Converted the veggies list to a tuple
+
+# Empty list would be myList = []
+# Empty tuple would be myTuple = ()

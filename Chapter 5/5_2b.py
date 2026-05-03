@@ -8,4 +8,6 @@ def odd(x):
         return False
 
 print(odd(5))
+# Returns True
 print(odd(6))
+# Returns False

@@ -16,3 +16,4 @@ else:
 example = [4, 2, 10, 8]
 example.sort()
 print(example)
+# Returns [2, 4, 8, 10]

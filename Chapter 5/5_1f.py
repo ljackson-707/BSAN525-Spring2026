@@ -10,6 +10,7 @@
 sentence = "This example has five words."
 words = sentence.split()        # Creates a list from a string
 print(words)
+# Returns ['This', 'example', 'has', 'five', 'words.']
 
 # words = sentence.split("i")
 # print(words)
@@ -18,4 +19,5 @@ for index in range(len(words)):
     words[index] = words [index].upper()
 
 print(words)
+# Returns ['THIS', 'EXAMPLE', 'HAS', 'FIVE', 'WORDS.']
 # Converts all letters to uppercase in the list that was created from a string.
