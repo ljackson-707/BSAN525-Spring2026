@@ -37,6 +37,7 @@ if approve == "Y":
         activity = activityList[index]
         line = str(lineNumber) + ". " + activity + "\n"     # similar to exercise 4.9
         outputFile.write(line)
+    outputFile.close()
 elif approve == "N":
     print("The program is closed. No file will be generated.")
 else:
@@ -45,5 +46,4 @@ else:
 
 # ** To write to an outputfile, outputFile.write(text)
 
-# Close both files at the end of the program, frees up memory
-outputFile.close()
+# Close the file at the end of the program, frees up memory
