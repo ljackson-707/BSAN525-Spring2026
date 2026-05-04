@@ -85,3 +85,4 @@ while True:
         # Prints an error message to terminal showing that the input was invalid, and asks for proper input (Section 1.4)
         print("Invalid input. Please enter Y for Yes or N for No.")
 # If the while True loop was not broken by a Y or N input, the loop will repeat from the top. 
+# All sections refer to Fundamentals of Python, Third Edition by Kenneth A. Lambert.
