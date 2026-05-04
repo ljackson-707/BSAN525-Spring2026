@@ -21,28 +21,39 @@ Functions used:
 14. outputFile.close() - closes the output file to avoid data being lost and free up memory (4.5 Text Files)
 15. break - break statement that stops the iteration of the while True loop, in this case if the user enters Y or N for input, the loop breaks (3.4 Conditional Iteration: The while Loop)
 16. \n - newline character that starts a new line in the string (2.2 Strings, Assignment, and Comments)
+17. open() - opens the output file in write mode so the string can be copied to the output file (4.5 Text Files)
 """
 
 # Import pandas library as pd abbreviation to use pandas functionality (Section 11.3)
 import pandas as pd
 
+# Asks the user for the input Excel file name (Section 1.4)
 fileName = input("Enter the Excel file name: ")
+# Asks the user to input today's date, to be used in the output file (Section 1.4)
 todayDate = input("Enter today's date: ")
+# Asks the user to input the number of activities and converts it to an integer to be used as sample size (Section 1.4)
 activityNumber = int(input("Enter the number of activities: "))
+# Asks the user to input the name of the output file to be generated (Section 1.4)
 outputName = input("Enter the output text file name: ")
 
+# pandas function to read an Excel file into a Pandas DataFrame
 df = pd.read_excel(fileName)
-randomdf = df.sample(n = activityNumber)  
+# pandas function to generate a random sample of rows from the DataFrame with size n.
+randomdf = df.sample(n = activityNumber)
+# Generates a list of items from the Name column in the randomdf sample (Section 5.1)
 activityList = list(randomdf["Name"])
+# Prints the generated activity list to the terminal for user review (Section 1.4)
 print(list(randomdf["Name"]))
 
+# ***START HERE AND CONTINUE WITH SINGLE LINE COMMENTS***
 # Using a while True loop to ensure the user enters a valid Y or N to approve or disapprove of the activity list, or is re-prompted to do so (Section 3.4)
-# Using an if, elif, else multiway if statement to generate different outputs depending on whether the user inputs Y, N, or something else (Section 3.3)
 while True:
     approve = input("Approve activity list and generate file? (Y/N): ")
+# Using an if, elif, else multiway if statement to generate different outputs depending on whether the user inputs Y, N, or something else (Section 3.3)
     if approve == "Y":
         outputFile = open(outputName, "w")
         outputFile.write("Agenda for " + todayDate + "\n\n")
+#Using a for loop to 
         for index in range(len(activityList)):     
             lineNumber = index + 1      
             activity = activityList[index]
